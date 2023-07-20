@@ -1,0 +1,790 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #250462;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --codar: #BF3EAA;
+    --codar-1: #E22B5B;
+    --other: rgb(253, 246, 235);
+    --lightbg: #f5eef0;
+    --bg-1: #FFF0E5;
+    --bg-2: #10162F;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #f79784;
+    --secondary: #75a9d6;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --black: #000000;
+    --silver: #D0D0D2;
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-bold: 'IBM Plex Sans', sans-serif;
+    --font-family-normal: 'Rubik', sans-serif;
+    /* spacing */
+    --base-padding: 0.75rem;
+    --base-margin: 0.75rem;
+
+    /* borders */
+    --base-border-thickness: 1px;
+    --base-border-radius: 20px;
+
+    /* box-shadow */
+    --base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+    /* font sizes */
+    --base-font-size: 1rem;
+    --base-font-size-sm: calc(1rem * 0.75);
+    --base-font-size-lg: calc(1rem * 1.5);
+    --base-font-size-xl: calc(1rem * 2);
+    --base-font-size-xxl: calc(1rem * 3);
+}
+
+.page-wrapper {
+    overflow: hidden;
+}
+
+/* hero section */
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4em 2em 4em;
+    height: 100%;
+}
+
+.hero-text img {
+    width: 15%;
+}
+
+.hero-text h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.hero-text h1 {
+    font-family: var(--font-family-normal);
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+/* problems section */
+
+.problems {
+    padding: 2em 0 0;
+}
+
+.problems-img img {
+    border-radius: 10px;
+}
+
+.problems-text h1 {
+    font-family: var(--font-family-normal);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.problems-text p {
+    background-color: white;
+    box-shadow: var(--base-box-shadow);
+    padding: 1.5em;
+    font-family: var(--font-family-normal);
+    position: relative;
+    height: 100%;
+    border: 1px solid var(--black);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.problems-text p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 5px;
+    background-color: var(--codar);
+}
+
+/* research section */
+.research {
+    padding: 4em 0 2em;
+}
+
+.accord {
+    padding: 0 0 2em;
+}
+
+.accord img {
+    width: 25%;
+}
+
+.accord i {
+    font-size: 2rem;
+}
+
+.accord h6 {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.accord h5 {
+    font-weight: bold;
+    font-family: var(--font-family-normal);
+    font-size: 1rem;
+}
+
+
+.statics {
+    text-align: center;
+    position: relative;
+}
+
+.statics::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+}
+
+.statics h1 {
+    color: var(--codar-1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding-top: 0.5em;
+}
+
+.statics p {
+    font-family: var(--font-family-normal);
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 0.5em;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+/* edtech section */
+
+.edtech {
+    padding: 4em 0 2em;
+}
+
+.edtech-img img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.edtech-text h1 {
+    font-family: var(--font-family-normal);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.edtech-text p {
+    background-color: white;
+    box-shadow: var(--base-box-shadow);
+    padding: 1.5em;
+    font-family: var(--font-family-normal);
+    position: relative;
+    height: 100%;
+    border: 1px solid var(--black);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.edtech-text p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 5px;
+    background-color: var(--codar);
+}
+
+
+/* solution section */
+
+
+.solution {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/solution.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4em 2em 2em;
+    height: 100%;
+    position: relative;
+    margin: 2em 0;
+}
+
+.sol-header {
+    background: linear-gradient(to top, var(--white), var(--silver));
+    display: flex;
+    gap: 7em;
+    padding: 0.5em;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.sol-header img {
+    width: 20%;
+}
+
+.sol-header h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    color: var(--purple);
+}
+
+.sol-header i {
+    color: var(--black);
+    font-size: 1.3rem;
+}
+
+.sol-text h1 {
+    font-family: var(--font-family-normal);
+    padding-top: 1rem;
+    font-size: 1rem;
+    line-height: 2;
+    color: var(--white);
+}
+
+
+/* other-solutions section */
+
+.other-solutions {
+    padding: 0em 0 0;
+}
+
+.other-img img {
+    border-radius: 10px;
+}
+
+.other-text h1 {
+    font-family: var(--font-family-normal);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.other-text p {
+    background-color: white;
+    box-shadow: var(--base-box-shadow);
+    padding: 1em 0.5em;
+    font-family: var(--font-family-normal);
+    position: relative;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+}
+
+.other-text .numbers p {
+    background-color: var(--codar);
+    text-align: center;
+    border: none;
+    color: var(--white);
+}
+
+/* tac section */
+.tac {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.884), rgba(128, 0, 128, 0.815)), url(../images/mockup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2em 2em 4em;
+    height: 100%;
+    position: relative;
+    margin: 2em 0;
+}
+
+.tac-header {
+    background: linear-gradient(to top, var(--white), var(--silver));
+    display: flex;
+    gap: 7em;
+    padding: 0.5em;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.tac-header img {
+    width: 20%;
+}
+
+.tac-header h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    color: var(--purple);
+}
+
+.tac-header i {
+    color: var(--black);
+    font-size: 1.3rem;
+}
+
+.tac-text h1 {
+    font-family: var(--font-family-normal);
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.vision h1 {
+    font-size: 2rem;
+}
+
+.tac-text .text {
+    font-size: 2rem;
+}
+
+/* research section */
+.market {
+    padding: 4em 0 2em;
+}
+
+.accords {
+    padding: 0 0 2em;
+}
+
+.accords img {
+    width: 5%;
+}
+
+.accords h6 {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.accords h5 {
+    font-weight: bold;
+    font-family: var(--font-family-normal);
+    font-size: 1.5rem;
+}
+
+
+.valuation {
+    text-align: center;
+    position: relative;
+}
+
+.valuation h1 {
+    color: var(--codar-1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding-top: 0.5em;
+}
+
+.valuation p {
+    font-family: var(--font-family-normal);
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.sep {
+    border: 2px solid var(--codar);
+    padding: 2em;
+    border-radius: 25px;
+}
+
+.sep span {
+    color: var(--codar-1);
+    font-weight: bold;
+}
+
+/* tac section */
+.product {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    padding: 1em 1em 4em;
+    margin: 2em 0;
+}
+
+.product-img img {
+    width: 30px;
+}
+
+.product-img h3 {
+    color: var(--white);
+    font-family: var(--font-family-normal);
+}
+
+.product-text h1 {
+    font-family: var(--font-family-normal);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.product-contain {
+    border: 2px solid var(--white);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em 0.3em;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.product-contain h2 {
+    color: var(--codar-1);
+    font-size: 1.4rem;
+    font-family: var(--font-family-normal);
+}
+
+.product-contain p {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: var(--font-family-normal);
+}
+
+.logos img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: contain;
+}
+
+/* tuition section */
+
+.tuition {
+    padding: 0em 0 2em;
+}
+
+.tuition img {
+    width: 100%;
+}
+
+.tuition .heading {
+    margin-bottom: 1.5em;
+}
+
+.tuition .heading h1 {
+    font-weight: bold;
+    font-family: var(--font-family-normal);
+}
+
+/* tuition section */
+
+.revenue {
+    padding: 0em 0 2em;
+}
+
+.revenue img {
+    width: 100%;
+}
+
+.revenue .heading {
+    margin-bottom: 1.5em;
+}
+
+.revenue .heading img {
+    width: 10%;
+}
+
+.revenue .heading h1 {
+    font-weight: bold;
+    font-family: var(--font-family-normal);
+    font-size: 1.5rem;
+}
+
+.revenue-buttons button {
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    padding: 0.1em 0.5em;
+    font-family: var(--font-family-normal);
+    box-shadow: var(--base-box-shadow);
+    color: var(--codar);
+    font-weight: bold;
+}
+
+.revenue-buttons .sep-button {
+    background-color: var(--codar);
+    color: var(--white);
+}
+
+/* target sections */
+
+.methods {
+    padding: 2em 0 3em;
+}
+
+.methods .heading {
+    margin-bottom: 1.5em;
+}
+
+.methods .heading img {
+    width: 10%;
+}
+
+.methods .heading h1 {
+    font-weight: bold;
+    font-family: var(--font-family-normal);
+    font-size: 1.5rem;
+}
+
+.target h1 {
+    font-family: var(--font-family-normal);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.target h1 span {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.target img {
+    width: 100%;
+}
+
+/* strategies section */
+.strategies{
+    padding: 4em 0 2em;
+}
+.strategies .heading h1 {
+    font-weight: bold;
+    font-family: var(--font-family-normal);
+    font-size: 1.5rem;
+}
+
+.strategies .heading i{
+    font-size: 2.3rem;
+}
+
+.strategies .heading h4{
+    text-align: center;
+    font-weight: 100;
+    padding-bottom: 0.5em;
+}
+.marketing h1 span{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.marketing{
+    border: 1px solid var(--black);
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5em 0.1em;
+}
+.sep-market h1 span{
+    color: var(--white);
+}
+.sep-market{
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.marketing h1{
+    font-size: 1rem;
+    font-family: var(--font-family-normal);
+    font-weight: 100;
+}
+
+/* market section */
+.adoption{
+    padding: 4em 0 2em;
+}
+.adoption img{
+width: 70%;
+}
+.adoption p{
+    font-family: var(--font-family-normal);
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.adoption .heading h1{
+    font-family: var(--font-family-normal);
+    text-align: left;
+}
+.adoption h4{
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+.adoption{
+    text-align: center;
+}
+
+.future h3{
+    font-family: var(--font-family-normal);
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 0.5em 0;
+    color: var(--purple);
+}
+.future h1{
+    font-size: 1.5rem;
+    font-family: var(--font-family-normal);
+    font-weight: bold;
+}
+@media only screen and (min-width:768px) {
+    .problems-img img {
+        width: 100%;
+        height: 310px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .edtech-img img {
+        height: 510px;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+
+    .other-img img {
+        height: 420px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+    }
+
+    .solution {
+        padding: 5em 2em 4em;
+    }
+
+    .statics p {
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .sol-text h1 {
+        font-size: 2.3rem;
+        word-break: break-all;
+        word-wrap: break-word;
+        line-height: 1.5;
+        inline-size: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .product-contain h2 {
+        color: var(--codar-1);
+        font-size: 1.7rem;
+        font-family: var(--font-family-normal);
+    }
+
+    .product-contain p {
+        color: var(--white);
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: var(--font-family-normal);
+    }
+
+    .product-contain {
+        height: 20vh;
+    }
+
+    .logos img {
+        width: 100%;
+        height: 50%;
+        -o-object-fit: cover;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width:991px) {
+
+    .statics h1,
+    .valuation h1 {
+        font-size: 4rem;
+    }
+
+    .valuation p {
+        font-size: 1rem;
+    }
+
+    .product-contain {
+        height: 25vh;
+    }
+
+    .target{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .revenue-img,.model{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    body{
+        font-size: 25px;
+    }
+    .product-contain {
+        height: 20vh;
+    }
+
+    .sol-text h1 {
+        inline-size: 70%;
+    }
+    .adoption img{
+        width: 50%;
+    }
+}
