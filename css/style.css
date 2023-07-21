@@ -96,7 +96,7 @@
 .hero-text h1 {
     font-family: var(--font-family-normal);
     padding-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--white);
 }
 
@@ -113,7 +113,7 @@
 .problems-text h1 {
     font-family: var(--font-family-normal);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .problems-text p {
@@ -363,7 +363,7 @@
 
 .tac-header h3 {
     font-family: 'Rubik', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--purple);
 }
 
@@ -375,17 +375,17 @@
 .tac-text h1 {
     font-family: var(--font-family-normal);
     padding-top: 1rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--white);
 }
 
 .vision h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .tac-text .text {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* research section */
@@ -512,6 +512,7 @@
 .tuition .heading h1 {
     font-weight: bold;
     font-family: var(--font-family-normal);
+    font-size: 1.3rem;
 }
 
 /* tuition section */
@@ -535,7 +536,7 @@
 .revenue .heading h1 {
     font-weight: bold;
     font-family: var(--font-family-normal);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .revenue-buttons button {
@@ -576,7 +577,7 @@
 
 .target h1 {
     font-family: var(--font-family-normal);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     margin-bottom: 1em;
 }
@@ -612,7 +613,7 @@
 .marketing h1 span{
     color: var(--black);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .marketing{
     border: 1px solid var(--black);
@@ -662,14 +663,14 @@ width: 70%;
 .future h3{
     font-family: var(--font-family-normal);
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border: 1px solid var(--black);
     border-radius: 10px;
     padding: 0.5em 0;
     color: var(--purple);
 }
 .future h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-family-normal);
     font-weight: bold;
 }
